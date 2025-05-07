@@ -50,7 +50,7 @@ section {
 }
 .mascote {
     display: block;
-    max-width: 300px;
+    max-width: 605px;
     margin: 2rem auto;
 }
 .produtos-grid {
@@ -78,3 +78,4 @@ footer {
 .social-icons img {
     width: 30px;
 }
+
