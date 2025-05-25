@@ -20,9 +20,8 @@ header {
     height: 60px;
 }
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
 }
 nav a {
     text-decoration: none;
@@ -39,20 +38,22 @@ nav a:hover {
     background-color: #1a1a26;
 }
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
-.hero p {
-    font-size: 1.25rem;
-    margin-top: 1rem;
+
+  .hero p {
+    font-size: 1rem;
 }
+
 section {
     padding: 3rem 2rem;
 }
-.mascote {
-    display: block;
-    max-width: 605px;
-    margin: 2rem auto;
-}
+
+  .mascote {
+    width: 100%;
+    max-width: 300px;
+  }
+  
 .produtos-grid {
     display: flex;
     gap: 2rem;
@@ -67,6 +68,19 @@ section {
 .produtos-grid img:hover {
     transform: scale(1.05);
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-banner {
+  max-width: 100%;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
 footer {
     background-color: #1c1c2b;
     text-align: center;
@@ -91,9 +105,12 @@ footer {
 	}
 }
 
-@media (min-width: 768px) {
-	/* celular / tablet */
-}
+/* celular / tablet */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
 
 @media (min-width: 992px) {
 	/* pequenas telas */
